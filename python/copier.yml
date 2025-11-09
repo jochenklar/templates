@@ -1,0 +1,14 @@
+package_name:
+  type: str
+  default: "{{ _folder_name | replace('-', '_') }}"
+
+package_description:
+  type: str
+
+user_name:
+  type: str
+  default: "{{ _copier_conf.settings.user_name }}"
+
+user_email:
+  type: str
+  default: "{{ _copier_conf.settings.user_email }}"
